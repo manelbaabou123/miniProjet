@@ -1,26 +1,5 @@
 <meta name="description" content="Official open source SVG icon library for Bootstrap">
 
-<h4 scope="form-group">Ajouter un Produit</h4>
-<hr>
-<div class="form-group">
-    <form (ngSubmit)="insertData()">
-        <div class="form-group">
-            <div class="lable">Nom</div>
-            <input type="text" name="nom" class="form-control" [(ngModel)]="produit.nom">
-        </div>
-        <div class="form-group">
-            <div class="lable">Prix unitaire</div>
-            <input type="text" name="prix" class="form-control" [(ngModel)]="produit.prix">
-        </div>
-        <div class="form-group">
-            <div class="lable">Quantité</div>
-            <input type="text" name="qunatite" class="form-control" [(ngModel)]="produit.quantite">
-        </div>
-        <button class="btn btn-info btn-sm mt-4">Ajouter</button>
-    </form>
-</div>
-<hr>
-
 <div class="container p-5">
     <div class="row">
         <h4 scope="form-group">Liste des Produits</h4>
@@ -75,3 +54,24 @@
         </table>
     </div>
 </div>
+
+<h4 scope="form-group">Ajouter un Produit</h4>
+<hr>
+<div class="form-group">
+    <form (ngSubmit)="insertData()">
+        <div class="form-group">
+            <div class="lable">Nom</div>
+            <input type="text" name="nom" class="form-control" [(ngModel)]="produit.nom">
+        </div>
+        <div class="form-group">
+            <div class="lable">Prix unitaire</div>
+            <input type="text" name="prix" class="form-control" [(ngModel)]="produit.prix">
+        </div>
+        <div class="form-group">
+            <div class="lable">Quantité</div>
+            <input type="text" name="qunatite" class="form-control" [(ngModel)]="produit.quantite">
+        </div>
+        <button class="btn btn-info btn-sm mt-4">Ajouter</button>
+    </form>
+</div>
+<hr>
